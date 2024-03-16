@@ -58,3 +58,20 @@ body{
     font-size: 15px;
     font-weight: 400;
 }
+.profile-card .media-buttons{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+.media-buttons .link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:rgb(234, 232, 237);
+    height: 34px;
+    width: 34px;
+    border-radius: 60%;
+    margin: 0 8px;
+    background-color: blueviolet;
+    text-decoration: none;
+}
