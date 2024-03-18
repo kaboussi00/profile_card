@@ -12,7 +12,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(232, 216, 247);
+    background-color: rgb(225, 240, 218);
 }
 
 .profile-card{
@@ -21,10 +21,21 @@ body{
     align-items: center;
     max-width: 370px;
     width: 100%;
-    background-color: rgb(202, 197, 207);
+    background-color: rgb(212, 231, 197);
     border-radius: 24px;
     padding : 25px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1) ;
+    position: relative;
+}
+.profile-card::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 36%;
+    width: 100%;
+    border-radius: 24px 24px 0 0;
+    background-color:rgb(153, 188, 133);
 }
 
 .image{
@@ -32,7 +43,7 @@ body{
     height: 150px;
     width: 150px;
     border-radius: 50%;
-    background-color: rgb(104, 62, 142);
+    background-color: rgb(53, 90, 33);
     padding: 4px;
     margin-bottom: 10px;
 }
@@ -42,7 +53,7 @@ body{
     width: 100%;
     object-fit: cover;
     border-radius: 50%;
-    border: 2px solid #a29da1;
+    border: 2px solid rgb(225, 240, 218);
 }
 .profile-card .text-data{
     display: flex;
@@ -72,9 +83,12 @@ body{
     width: 34px;
     border-radius: 60%;
     margin: 0 8px;
-    background-color: blueviolet;
+    background-color: rgb(155, 173, 146);
     text-decoration: none;
     font-size: 20px;
+}
+.media-buttons .media-button:hover {
+    background-color: rgb(4, 10, 1);
 }
 .profile-card .buttons{
     display:flex;
@@ -82,7 +96,7 @@ body{
     margin-top: 25px;
 }
 .buttons .button{
-    background-color: blueviolet;
+    background-color: rgb(53, 90, 33);
     color:rgb(234, 232, 237);
     font-size: 14px;
     font-weight: 400;
@@ -94,5 +108,24 @@ body{
     transition: all 0.3s ease;
 }
 .buttons .button:hover {
-    background-color: rgb(108, 88, 127);
+    background-color: rgb(155, 173, 146);
+}
+.profile-card .analytics{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+.analytics .data{
+    display: flex;
+    margin-top: 15px;
+    padding: 0 20px;
+    color:#333;
+    border-right: 2px solid #e7e7e7;
+}
+.data i{
+    font-size: 18px;
+    margin-right:6px ;
+}
+.data:last-child{
+    border-right: none;
 }
