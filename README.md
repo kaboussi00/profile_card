@@ -20,5 +20,4 @@ This project is a simple profile card that represents my name and job, as well a
 ## Credits
 
 boxicons.com: Icon pack used for the social media icons.
-
 Google Fonts: Fonts used for the text in the profile card. 
